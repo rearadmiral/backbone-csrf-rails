@@ -1,0 +1,3 @@
+A simple monkey patch for Backbone to attach the CSRF meta tags used in Rails apps.
+
+Probably you shouldn't use this and instead find a better one. But I couldn't and so here we are.

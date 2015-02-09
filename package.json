@@ -1,0 +1,11 @@
+{
+  "name" : "backbone-csrf-rails",
+  "description" : "JavaScript's functional programming helper library.",
+  "author" : "Bill DePhillips <bill.dephillips@gmail.com>",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/rearadmiral/backbone-csrf-rails"
+  },
+  "main" : "backbone-csrf-rails",
+  "version" : "1.0.0"
+}
