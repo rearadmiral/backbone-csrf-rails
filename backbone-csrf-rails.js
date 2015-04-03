@@ -4,6 +4,7 @@ var Backbone = require('backbone');
 
 /* alias away the sync method */
 Backbone._sync = Backbone.sync;
+var $ = Backbone.$;
 
 /* define a new sync method */
 Backbone.sync = function(method, model, success, error) {
@@ -11,8 +12,8 @@ Backbone.sync = function(method, model, success, error) {
   if (method == 'create' || method == 'update' || method == 'delete') {
     /* grab the token from the meta tag rails embeds */
     var auth_options = {};
-    auth_options[jQuery("meta[name='csrf-param']").attr('content')] =
-                 jQuery("meta[name='csrf-token']").attr('content');
+    auth_options[$("meta[name='csrf-param']").attr('content')] =
+                 $("meta[name='csrf-token']").attr('content');
     /* set it as a model attribute without triggering events */
     model.set(auth_options, {silent: true});
   }
