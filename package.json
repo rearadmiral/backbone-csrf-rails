@@ -7,5 +7,5 @@
     "url": "https://github.com/rearadmiral/backbone-csrf-rails"
   },
   "main" : "backbone-csrf-rails",
-  "version" : "1.0.0"
+  "version" : "1.0.1"
 }
